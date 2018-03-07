@@ -10,7 +10,7 @@
  ### 版本说明
 
    * 0.9 (当前) 版本, 仅支持[Eng](https://github.com/343830384/Eng) 的 e-base、e-attr、e-html、e-for 
-   * 1.0 版本中, 待考虑
+   * 1.0 版本 待考虑
 
 ### 声明
 
