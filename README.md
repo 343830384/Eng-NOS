@@ -1,7 +1,7 @@
 <div align=center><img width="50" height="50" src="https://github.com/343830384/Eng/blob/master/img/80.png"/></div>
 
-<div align = right>[Eng](https://github.com/343830384/Eng)</div> 
-<div align = right>[Eng-Drive](https://github.com/343830384/Eng-Drive)</div> 
+[Eng](https://github.com/343830384/Eng)
+[Eng-Drive](https://github.com/343830384/Eng-Drive)
 
 ## Eng-NOS (3月8号 放出)
 
