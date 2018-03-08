@@ -78,7 +78,25 @@ var compileData={"user":{"name":{"1":[1]},"phone":{"1":[3]},"sex":{"1":[7],"2":[
 	    	    sw.eq(1).html(html);
 	    	    sw.eq(1).show();
 	    })
-
+/*
+ * <div id='app'>
+		    	   	   <div class="title">{{title}}</div>
+		    	   	   <div class="user" e-base='user'>
+						    	   	  <span>姓名: {{name}}</span><span>手机: {{phone}}</span><span e-attr='class=sex==男?(man):(women)'>性别: {{sex}}</span><span>编号: {{id}}</span>
+						    	   	   <span class='address'>地址: {{address}}</span>  
+						    	   </div>
+						    	   <div e-html='notice' class='notice'>
+						    	   	     sex性别选项 会根据 性别 更改 class样式   sex==男?(man):(women)
+						    	   </div>
+						    	   <div class='list'>
+						    	   	    <div e-for='list'>
+						    	   	    	   <span class='product'>名称: {{name}}</span>
+						    	   	    	   <span class='number'>数量: {{amount}}</span>
+						    	   	    	   <span class='price'>单价: {{price}} 元</span>
+						    	   	    </div>
+						    	   </div>
+</div>
+*/
    
       
 </script>
