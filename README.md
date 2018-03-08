@@ -4,7 +4,7 @@
 ## Eng-NOS (3月8号 下午上传)
 
    * Eng-NOS 寓意为 [Eng](https://github.com/343830384/Eng)的 NOS 氮气直线加速系统 , 因此舍弃了对完整[Eng](https://github.com/343830384/Eng)的其它功能支持 , 只做单纯的页面渲染
-   * Eng-NOS 因此 仅支持[Eng](https://github.com/343830384/Eng) 的 e-base、e-attr、e-html、e-for 4个指令, (e-attr 可操作所有行内属性) ,实时上绝大部分常规页面也仅做渲染,使用其它js操作,Eng-NOS恰恰最符合这种应用场景
+   * Eng-NOS 因此 仅支持[Eng](https://github.com/343830384/Eng) 的 e-base、e-attr、e-html、e-for 4个指令 , (e-attr 可操作所有行内属性) , 实时上绝大部分常规页面也仅做渲染 , 使用其它js工具操作, Eng-NOS恰恰最符合这种应用场景
    * Eng-NOS 拥有世界顶尖的性能 远超所有主流已知同类JS工具. 和 仅仅 1点多 Kb 的体积 ,是 [Eng](https://github.com/343830384/Eng)和其同类工具中佼佼者的完整渲染性能耗时的1/3左右, 纯html文本用时占比 1/10左右
    * Eng-NOS 可以和 [Eng](https://github.com/343830384/Eng) 共享组件 , 但仅能执行 被 [Eng-Drive](https://github.com/343830384/Eng-Drive) 编译后的组件 , 被编译后的组件体积相较于原始会有所增加, 但相对于组件本身的大小,几乎可以忽略
    * Eng-NOS 兼容所有浏览器
