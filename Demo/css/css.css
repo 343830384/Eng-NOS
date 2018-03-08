@@ -1,0 +1,83 @@
+			*{
+				margin:0 auto;
+				padding:0;
+				box-sizing:border-box;
+			}
+			body{
+				 background-color:rgb(58,68,80);
+			}
+			h3{
+				background-color:black;
+				color:white;
+			}
+			.container{
+				 min-height:300px;
+				 margin:30px auto;
+			}
+			#app{
+				 margin: auto;
+				 width: 560px;
+				 min-height:240px;
+				 border:1px solid #92BB90;
+				 color:#BAF1E7;
+			}
+			.user{
+				 color:#D1AED2;
+				 height:60px;
+				 border:#76A773 1px solid;
+			}
+			.user span{
+				 display:block;
+				 width:25%;
+				 height:30px;
+				 line-height:30px;
+				 text-align:left;
+				 float:left;
+				 font-size:15px;
+			}
+			.address{
+				width:100% !important;
+			}
+			.title{
+				  height:40px;
+				  line-height:40px;
+				  text-align:center;
+				  font-size:25px;
+				  font-weight:bolder;
+			}
+			.list{
+				 border-top:1px solid #F0ECDC;
+			}
+			.list span{
+				 display:block;
+				 float:left;
+				 width:20%;
+			}
+			h3{
+				 text-align:center;
+			}
+			.notice{
+				 height:50px;
+				 line-height:50px;
+				 text-align:center;
+			}
+			.product{
+				 width:60% !important;
+			}
+			.btn{
+				 position:absolute;
+				 top:40px;
+				 right:0;
+			}
+		.btn button{
+			 width:100px;
+			 height:40px;
+			 margin-top:20px;
+			 background-color:#E4E188;
+		}
+		.man{
+			 color:red;
+		}
+		.women{
+			color:green;
+		}
