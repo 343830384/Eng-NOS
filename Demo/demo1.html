@@ -5,39 +5,56 @@
 		<title>普通 </title>
 	<link rel="stylesheet" href="css/css.css" />
 		<script type="text/javascript" src="jquery-1.8.3.min.js" ></script>
-		<script type="text/javascript" src="./Eng-Nos-0.9.0.js"></script>
+		<!--<script type="text/javascript" src="./Eng-Nos.js" ></script>-->
+		<script type="text/javascript" src="./Eng-Nos-0.9.1.js"></script>
 	</head>
 	<body>
 	  	<h3>全支持指令 演示</h3>
     <div class='container'>
     	   <div class="switch">
-		    	   <div id='app'>
-		    	   	   <div class="title">{{title}}</div>
-		    	   	   <div class="user" e-base='user'>
-						    	   	  <span>姓名: {{name}}</span><span>手机: {{phone}}</span><span e-attr='class=sex==男?(man):(women)'>性别: {{sex}}</span><span>编号: {{id}}</span>
-						    	   	   <span class='address'>地址: {{address}}</span>  
-						    	   </div>
-						    	   <div e-html='notice' class='notice'>
-						    	   	     sex性别选项 会根据 性别 更改 class样式   sex==男?(man):(women)
-						    	   </div>
-						    	   <div class='list'>
-						    	   	    <div e-for='list'>
-						    	   	    	   <span class='product'>名称: {{name}}</span>
-						    	   	    	   <span class='number'>数量: {{amount}}</span>
-						    	   	    	   <span class='price'>单价: {{price}} 元</span>
-						    	   	    </div>
-						    	   </div>
-		    	   </div>
+    	   	<!--app start -->
+    	   	
+									    	   <div id='app'>
+									    	   	   <div class="title">{{title}}</div>
+									    	   	   <div class="user" e-base='user'>
+													    	   	  <span>姓名: {{name}}</span><span>手机: {{phone}}</span><span e-attr='class=sex==男?(man):(women)'>性别: {{sex}}</span><span>编号: {{id}}</span>
+													    	   	   <span class='address'>地址: {{address}}</span>  
+													    	   </div>
+													    	   <div e-html='notice' class='notice'>
+													    	   	     sex性别选项 会根据 性别 更改 class样式   sex==男?(man):(women)
+													    	   </div>
+													    	   <div>
+													    	   	    <div class="items">
+													    	   	    	   <span e-for='items'>{{$_index}} . {{$_value}}</span> 
+													    	   	    </div>
+													    	   	    <div class='list'>
+																    	   	    <div e-for='list' class="li">
+																    	   	    	   <span class='oNo'>{{$_index}}</span>  
+																    	   	    	   <span class='product'>{{name}}</span>
+																    	   	    	   <span class='number'>{amount}}</span>
+																    	   	    	   <span class='price'>{{price}} 元</span>
+																    	   	    </div>
+													    	   	    </div>
+													    	   </div>
+									    	    </div>
+		    	    
+		    	   <!--app end -->
     	   </div>
+    	   
+    	   
     	   <div class='switch'></div>
     </div>
+    
+    
     <h4 style="color:white;text-align:center;">这里注意到列表选项无法输出序号,稍后在0.9.1中补充</h4>
 	<div class="btn"><button>显示原始组件结构</button><br><button>显示生成页面</button> <div>
+		
 	</body>
 </html>
 <script>
-var compileData={"user":{"name":{"1":[1]},"phone":{"1":[3]},"sex":{"1":[7],"2":[5]},"id":{"1":[9]},"address":{"1":[11]},"$_a":["<div class=\"user\"><span>姓名: ","","</span><span>手机: ","","</span><span ","",">性别: ","","</span><span>编号: ","","</span> <span class=\"address\">地址: ","","</span></div>"],"$_c":[[""],[""]],"$_b":{"5":[["sex",0,"class","男","man","women"],0]}},"list":{"name":{"1":[1]},"amount":{"1":[3]},"price":{"1":[5]},"$_a":["<div><span class=\"product\">名称: ",""," </span><span class=\"number\">数量: ",""," </span><span class=\"price\">单价: ",""," 元</span></div>"]},"title":{"1":[1]},"notice":{"1":[3]},"$_a":["<div id=\"app\"><div class=\"title\">","","</div><!--$#user#$--><div >","","</div><div class=\"list\"><!--$#list#$--></div></div>"]};
-	var data={
+var compileData={"user":{"name":{"1":[1]},"phone":{"1":[3]},"sex":{"1":[7],"2":[5]},"id":{"1":[9]},"address":{"1":[11]},"$_a":["<div class=\"user\"><span>姓名: ","","</span><span>手机: ","","</span><span ","",">性别: ","","</span><span>编号: ","","</span> <span class=\"address\">地址: ","","</span></div>"],"$_c":[[""],[""]],"$_b":{"5":[["sex",0,"class","男","man","women"],0]}},"items":{"$_a":["<span>",""," . ","","</span>"],"$_d":{"1":[1]},"$_e":{"1":[3]}},"list":{"name":{"1":[3]},"amount":{"1":[5]},"price":{"1":[7]},"$_a":["<div class=\"li\"><span class=\"oNo\">NO : ","","</span> <span class=\"product\">名称: ","","</span> <span class=\"number\">数量: ","","</span> <span class=\"price\">单价: ",""," 元</span></div>"],"$_d":{"1":[1]}},"title":{"1":[1]},"notice":{"1":[3]},"$_a":["<div id=\"app\"><div class=\"title\">","","</div><!--$#user#$--><div  class=\"notice\">","","</div><div><div class=\"items\"><!--$#items#$--></div><div class=\"list\"><!--$#list#$--></div></div></div>"]};
+
+var data={
 		     title:'购物清单',
 		     notice:'<p style="color:#B3ACC9;text-align:center;height:50px">我是e-htm 指令插入的数据</p>',
 		     user:{
@@ -47,22 +64,11 @@ var compileData={"user":{"name":{"1":[1]},"phone":{"1":[3]},"sex":{"1":[7],"2":[
 				     	  id:'B0021',
 				     	  address:'北京市朝阳区朝阳街朝阳小区A栋304'
 		     },
+		     items:['序号','名称','数量','价格'],
 		     list:[
-						       {
-						       	name:'充气娃娃',
-						       	amount:3,
-						       	price:'9999'
-						       },
-						       {
-						       	name:'手机',
-						       	amount:1,
-						       	price:'3299'
-						       },
-						       {
-						       	name:'PS4 游戏机',
-						       	amount:1,
-						       	price:'4999'
-						       }
+						       {name:'充气娃娃',amount:3,price:'9999'},
+						       {name:'手机', amount:1, price:'3299'},
+						       {name:'PS4 游戏机',amount:1,	price:'4999'}
 		     ]
 	};
 	var sw=$('.switch');
@@ -79,22 +85,28 @@ var compileData={"user":{"name":{"1":[1]},"phone":{"1":[3]},"sex":{"1":[7],"2":[
 	    	    sw.eq(1).show();
 	    })
 /*
- * <div id='app'>
-		    	   	   <div class="title">{{title}}</div>
-		    	   	   <div class="user" e-base='user'>
-						    	   	  <span>姓名: {{name}}</span><span>手机: {{phone}}</span><span e-attr='class=sex==男?(man):(women)'>性别: {{sex}}</span><span>编号: {{id}}</span>
-						    	   	   <span class='address'>地址: {{address}}</span>  
-						    	   </div>
-						    	   <div e-html='notice' class='notice'>
-						    	   	     sex性别选项 会根据 性别 更改 class样式   sex==男?(man):(women)
-						    	   </div>
-						    	   <div class='list'>
-						    	   	    <div e-for='list'>
-						    	   	    	   <span class='product'>名称: {{name}}</span>
-						    	   	    	   <span class='number'>数量: {{amount}}</span>
-						    	   	    	   <span class='price'>单价: {{price}} 元</span>
-						    	   	    </div>
-						    	   </div>
+ <div id='app'>
+ 	   	   <div class="title">{{title}}</div>
+ 	   	   <div class="user" e-base='user'>
+	    	   	  <span>姓名: {{name}}</span><span>手机: {{phone}}</span><span e-attr='class=sex==男?(man):(women)'>性别: {{sex}}</span><span>编号: {{id}}</span>
+	    	   	   <span class='address'>地址: {{address}}</span>  
+	    	   </div>
+	    	   <div e-html='notice' class='notice'>
+	    	   	     sex性别选项 会根据 性别 更改 class样式   sex==男?(man):(women)
+	    	   </div>
+	    	   <div>
+	    	   	    <div class="items">
+	    	   	    	   <span e-for='items'>{{$_index}} . {{$_value}}</span> 
+	    	   	    </div>
+	    	   	    <div class='list'>
+				    	   	    <div e-for='list' class="li">
+				    	   	    	   <span class='oNo'>{{$_index}}</span>  
+				    	   	    	   <span class='product'>{{name}}</span>
+				    	   	    	   <span class='number'>{amount}}</span>
+				    	   	    	   <span class='price'>{{price}} 元</span>
+				    	   	    </div>
+	    	   	    </div>
+	    	   </div>
 </div>
 */
    
