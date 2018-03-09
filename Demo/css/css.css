@@ -16,7 +16,7 @@
 			}
 			#app{
 				 margin: auto;
-				 width: 560px;
+				 width: 600px;
 				 min-height:240px;
 				 border:1px solid #92BB90;
 				 color:#BAF1E7;
@@ -27,7 +27,7 @@
 				 border:#76A773 1px solid;
 			}
 			.user span{
-				 display:block;
+				 display:inline-block;
 				 width:25%;
 				 height:30px;
 				 line-height:30px;
@@ -48,10 +48,17 @@
 			.list{
 				 border-top:1px solid #F0ECDC;
 			}
+			.li{
+				 height:30px;
+			}
 			.list span{
-				 display:block;
-				 float:left;
+				 display:inline-block;
+				 height:30px;
+				 line-height:30px;
+				 font-size:12px;
 				 width:20%;
+				 float:left;
+				 margin-left:0;
 			}
 			h3{
 				 text-align:center;
@@ -61,8 +68,12 @@
 				 line-height:50px;
 				 text-align:center;
 			}
+			/*.oNo{
+				width:10%;
+			}*/
 			.product{
-				 width:60% !important;
+				 width:40% !important;
+				 overflow:hidden;
 			}
 			.btn{
 				 position:absolute;
@@ -81,3 +92,18 @@
 		.women{
 			color:green;
 		}
+		.items{
+			height:30px;
+			border:1px solid sandybrown;
+		} 
+		.items span{
+			  display:inline-block;
+				 line-height:30px;
+				 font-size:12px;
+				 float:left;
+				 white-space:nowrap;
+				 width:20%;
+		}
+		.items span:first-child+span{
+    width:40% !important;
+} 
