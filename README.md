@@ -10,8 +10,9 @@
 
  ### 版本说明
 
-   *  0.9 (当前) 版本, 仅支持[Eng](https://github.com/343830384/Eng) 的 e-base、e-attr、e-html、e-for 
-   *  1.0 版本 待考虑
+   *  0.9.0 (当前) 版本, 仅支持[Eng](https://github.com/343830384/Eng) 的 e-base、e-attr、e-html、e-for 
+   *  0.9.1 (当前) 1.7kb,增加列表输出序号 和 value值 功能 ,使用方式 demo 中已加 或 参照[Eng](https://github.com/343830384/Eng) API e-for 指令.
+   *  1.0.0 版本 待考虑
 
 ### 声明
 
