@@ -30,7 +30,11 @@
       	document.body.innerHTML=html;
       	// 没了就这样 ( 仓库里 有个 demo 源码在页面内)
 ```
-
+### 作者吐槽
+```
+    对于非超大页面而言 , 网速的影响远大于渲染性能 , 组件细拆后的渲染速度依然强势 
+     
+```
 ## License
 
 [![License](http://img.shields.io/badge/license-APACHE2-blue.svg)](LICENSE.txt)         
