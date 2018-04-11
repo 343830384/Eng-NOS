@@ -27,7 +27,7 @@
    var html= Eng_Nos( data , engCompileData );
             
       	document.body.innerHTML=html;
-      	// 没了就这样 ( 仓库里 有个 demo 源码在页面内)
+      	// 没了就这样 ( 仓库里内有全指令使用示例 , demo 源码在页面内)
 ```
 ### 作者吐槽
 ```

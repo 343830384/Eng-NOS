@@ -1,109 +1,111 @@
-			*{
-				margin:0 auto;
-				padding:0;
-				box-sizing:border-box;
-			}
-			body{
-				 background-color:rgb(58,68,80);
-			}
-			h3{
-				background-color:black;
-				color:white;
-			}
-			.container{
-				 min-height:300px;
-				 margin:30px auto;
-			}
-			#app{
-				 margin: auto;
-				 width: 600px;
-				 min-height:240px;
-				 border:1px solid #92BB90;
-				 color:#BAF1E7;
-			}
-			.user{
-				 color:#D1AED2;
-				 height:60px;
-				 border:#76A773 1px solid;
-			}
-			.user span{
-				 display:inline-block;
-				 width:25%;
-				 height:30px;
-				 line-height:30px;
-				 text-align:left;
-				 float:left;
-				 font-size:15px;
-			}
-			.address{
-				width:100% !important;
-			}
-			.title{
-				  height:40px;
-				  line-height:40px;
-				  text-align:center;
-				  font-size:25px;
-				  font-weight:bolder;
-			}
-			.list{
-				 border-top:1px solid #F0ECDC;
-			}
-			.li{
-				 height:30px;
-			}
-			.list span{
-				 display:inline-block;
-				 height:30px;
-				 line-height:30px;
-				 font-size:12px;
-				 width:20%;
-				 float:left;
-				 margin-left:0;
-			}
-			h3{
-				 text-align:center;
-			}
-			.notice{
-				 height:50px;
-				 line-height:50px;
-				 text-align:center;
-			}
-			/*.oNo{
-				width:10%;
-			}*/
-			.product{
-				 width:40% !important;
-				 overflow:hidden;
-			}
-			.btn{
-				 position:absolute;
-				 top:40px;
-				 right:0;
-			}
-		.btn button{
-			 width:100px;
-			 height:40px;
-			 margin-top:20px;
-			 background-color:#E4E188;
-		}
-		.man{
-			 color:red;
-		}
-		.women{
-			color:green;
-		}
-		.items{
-			height:30px;
-			border:1px solid sandybrown;
-		} 
-		.items span{
-			  display:inline-block;
-				 line-height:30px;
-				 font-size:12px;
-				 float:left;
-				 white-space:nowrap;
-				 width:20%;
-		}
-		.items span:first-child+span{
-    width:40% !important;
+*{
+	margin:0 auto;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+		background-color:rgb(58,68,80);
+}
+h3{
+	background-color:black;
+	color:white;
+}
+.container{
+		min-height:300px;
+		margin:30px auto;
+}
+#app{
+		margin: auto;
+		width: 600px;
+		min-height:240px;
+		border:1px solid #92BB90;
+		color:#BAF1E7;
+}
+.user{
+		color:#D1AED2;
+		height:60px;
+		border:#76A773 1px solid;
+}
+.user span{
+		display:inline-block;
+		width:25%;
+		height:30px;
+		line-height:30px;
+		text-align:left;
+		float:left;
+		font-size:15px;
+}
+.address{
+	width:100% !important;
+}
+.title{
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		font-size:25px;
+		font-weight:bolder;
+}
+.list{
+		border-top:1px solid #F0ECDC;
+}
+.li{
+		height:30px;
+}
+.list span{
+		display:inline-block;
+		height:30px;
+		line-height:30px;
+		font-size:12px;
+		width:20%;
+		float:left;
+		margin-left:0;
+}
+h3{
+		text-align:center;
+}
+.notice{
+		height:50px;
+		line-height:50px;
+		text-align:center;
+}
+/*.oNo{
+	width:10%;
+}*/
+.product{
+		width:40% !important;
+		overflow:hidden;
+}
+.btn{
+		width:210px;
+		height:40px;
+		line-height:40px; 
+      
+}
+.btn button{
+	    display:inline-block;
+		width:100px;
+		height:40px;
+		vertical-align: middle;
+		background-color:#E4E188;
+}
+.man{
+		color:red;
+}
+.women{
+	color:green;
+}
+.items{
+	height:30px;
+	border:1px solid sandybrown;
+} 
+.items span{
+		display:inline-block;
+			line-height:30px;
+			font-size:12px;
+			float:left;
+			white-space:nowrap;
+			width:20%;
+}
+.items span:first-child+span{
+  width:40% !important;
 } 

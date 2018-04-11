@@ -9,34 +9,35 @@
 		<script type="text/javascript" src="./Eng-Nos-0.9.1.js"></script>
 	</head>
 	<body>
-	  	<h3>全支持指令 演示</h3>
+		  <h3>全部支持指令 演示</h3>
+		  <div class="btn"><button>显示原始组件结构</button><button>显示生成页面</button></div>
     <div class='container'>
     	   <div class="switch">
     	   	<!--app start -->
     	   	
-									    	   <div id='app'>
-									    	   	   <div class="title">{{title}}</div>
-									    	   	   <div class="user" e-base='user'>
-													    	   	  <span>姓名: {{name}}</span><span>手机: {{phone}}</span><span e-attr='class=sex==男?(man):(women)'>性别: {{sex}}</span><span>编号: {{id}}</span>
-													    	   	   <span class='address'>地址: {{address}}</span>  
-													    	   </div>
-													    	   <div e-html='notice' class='notice'>
-													    	   	     sex性别选项 会根据 性别 更改 class样式   sex==男?(man):(women)
-													    	   </div>
-													    	   <div>
-													    	   	    <div class="items">
-													    	   	    	   <span e-for='items'>{{$_index}} . {{$_value}}</span> 
-													    	   	    </div>
-													    	   	    <div class='list'>
-																    	   	    <div e-for='list' class="li">
-																    	   	    	   <span class='oNo'>{{$_index}}</span>  
-																    	   	    	   <span class='product'>{{name}}</span>
-																    	   	    	   <span class='number'>{amount}}</span>
-																    	   	    	   <span class='price'>{{price}} 元</span>
-																    	   	    </div>
-													    	   	    </div>
-													    	   </div>
-									    	    </div>
+				<div id='app'>
+					<div class="title">{{title}}</div>
+					<div class="user" e-base='user'>
+									<span>姓名: {{name}}</span><span>手机: {{phone}}</span><span e-attr='class=sex==男?(man):(women)'>性别: {{sex}}</span><span>编号: {{id}}</span>
+									<span class='address'>地址: {{address}}</span>  
+								</div>
+								<div e-html='notice' class='notice'>
+										sex性别选项 会根据 性别 更改 class样式   sex==男?(man):(women)
+								</div>
+								<div>
+									<div class="items">
+											<span e-for='items'>{{$_index}} . {{$_value}}</span> 
+									</div>
+									<div class='list'>
+												<div e-for='list' class="li">
+														<span class='oNo'>{{$_index}}</span>  
+														<span class='product'>{{name}}</span>
+														<span class='number'>{{amount}}</span>
+														<span class='price'>{{price}} 元</span>
+												</div>
+									</div>
+								</div>
+				</div>
 		    	    
 		    	   <!--app end -->
     	   </div>
@@ -46,8 +47,7 @@
     </div>
     
     
-    <h4 style="color:white;text-align:center;">这里注意到列表选项无法输出序号,稍后在0.9.1中补充</h4>
-	<div class="btn"><button>显示原始组件结构</button><br><button>显示生成页面</button> <div>
+	
 		
 	</body>
 </html>
@@ -83,7 +83,8 @@ var data={
 	    	    sw.eq(0).hide();
 	    	    sw.eq(1).html(html);
 	    	    sw.eq(1).show();
-	    })
+	    });
+		btn.eq(1).click();
 /*
  <div id='app'>
  	   	   <div class="title">{{title}}</div>
